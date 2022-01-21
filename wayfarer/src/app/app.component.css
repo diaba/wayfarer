@@ -3,6 +3,7 @@
 }
 .container {
   display: grid;
+  width: 100%;
   grid-template-columns: 1f 1fr 1f 1f;
   grid-template-rows: 50px 400vh;
   grid-template-areas:

@@ -6,14 +6,15 @@
         name
     </div>
 </div> -->
-<div class="content">
+<!-- <div class="content">
 
-</div>
+</div> -->
 
+<app-navbar></app-navbar>
 <div class="container">
-    <div class="nav">
+    <!-- <div class="nav">
         <app-navbar></app-navbar>
-    </div>
+    </div> -->
     <div class="side">
         <div *ngFor="let city of cities" class="sideElt">
             <a routerLink="/cities/{{ city.id }}">
@@ -24,11 +25,12 @@
         </div>
     </div>
     <div class="main">
-        <router-outlet></router-outlet>
+        <!-- <router-outlet></router-outlet> -->
     </div>
+    <router-outlet></router-outlet>
 </div>
 
 
 
-<router-outlet></router-outlet>
+
 
