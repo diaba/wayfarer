@@ -17,11 +17,11 @@ export class CityComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe((param) => {
       // deal with the id parameter
-      console.log(param.get('id'));
-      this.cityIndex = param.get('id');
+      console.log(param.get('cid'));
+      this.cityIndex = param.get('cid');
       // find by index
       this.city = CITIES.find((j) => {
-        const paramId: string = param.get('id') || '';
+        const paramId: string = param.get('cid') || '';
         return j.id === parseInt(paramId);
       });
     });

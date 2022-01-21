@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CityComponent } from './city/city.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PostComponent } from './post/post.component';
+import { PostDetailsComponent } from './post-details/post-details.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PostComponent } from './post/post.component';
     NavbarComponent,
     CityComponent,
     HomepageComponent,
-    PostComponent
+    PostComponent,
+    PostDetailsComponent
   ],
   imports: [
     BrowserModule,

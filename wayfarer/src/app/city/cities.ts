@@ -6,8 +6,10 @@ export const CITIES = [
     posts: [
       {
         id: 1,
-        title: 'This city is ancient',
-        post: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
+        title: 'London Post 1',
+        author: 'Habsatou War',
+        content:
+          'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
       },
     ],
   },
@@ -20,8 +22,10 @@ export const CITIES = [
     posts: [
       {
         id: 1,
-        title: 'Seafood is great',
-        post: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
+        title: 'Sydney Post 1',
+        author: 'Laury Benoit',
+        content:
+          'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
       },
     ],
   },
@@ -31,7 +35,15 @@ export const CITIES = [
     city: 'San Francisco',
     image:
       'https://images.pexels.com/photos/208745/pexels-photo-208745.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
-    posts: [{}],
+    posts: [
+      {
+        id: 1,
+        title: 'San Francisco Post 1',
+        author: 'Michelle Lucero',
+        content:
+          'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
+      },
+    ],
   },
 
   {
@@ -42,18 +54,24 @@ export const CITIES = [
     posts: [
       {
         id: 1,
-        title: 'This city is ancient',
-        post: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
+        title: 'Seattle Post 1',
+        author: 'Antonio Banderas',
+        content:
+          'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
       },
       {
         id: 2,
-        title: 'This city is ancient',
-        post: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
+        title: 'Seattle Post 2',
+        author: 'Bob',
+        content:
+          'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
       },
       {
         id: 3,
-        title: 'This city is ancient',
-        post: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
+        title: 'Seattle Post 3',
+        author: 'Maria Gomez',
+        content:
+          'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
       },
     ],
   },
