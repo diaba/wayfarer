@@ -5,10 +5,10 @@ import { CityComponent } from './city/city.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: NavbarComponent,
-  },
+  // {
+  //   path: '',
+  //   component: NavbarComponent,
+  // },
   {
     path: 'cities/:id',
     component: CityComponent,
