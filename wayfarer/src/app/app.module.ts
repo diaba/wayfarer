@@ -19,6 +19,7 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TopicsComponent } from './topics/topics.component';
 import { FormsModule } from '@angular/forms';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { FormsModule } from '@angular/forms';
     SideBarComponent,
     PageNotFoundComponent,
     TopicsComponent,
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,

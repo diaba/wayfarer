@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subject } from 'rxjs';
 import { CITIES } from './cities'
 import {SearchService } from '../search/search.service'; // import the service
+import { CityService } from './city.service';
 @Component({
   selector: 'app-city',
   templateUrl: './city.component.html',
@@ -15,28 +16,21 @@ export class CityComponent implements OnInit {
   cityIndex: string| null = '';  // Union type
   searchSubject = new Subject();
  
-  constructor(private route: ActivatedRoute, private searchService: SearchService) { }
+  constructor(private route: ActivatedRoute, private cityService: CityService ) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(param => {// deal with the id parameter
     
-      this.cityIndex = param.get('id');
-  
+      this.cityIndex = param.get('cid');
+      const id:number = parseInt(this.  cityIndex);
+      this.city = this.cityService.getCity(id);
       // find by index
-      this.city = CITIES.find(j => {
-          const paramId:string = param.get('cid') || '';
-          return j.id === parseInt(paramId)
-        });
+      // this.city = CITIES.find(j => {
+      //     const paramId:string = param.get('cid') || '';
+      //     return j.id === parseInt(paramId)
+      //   });
         console.log("City Details: city"+this.city.id);
-  // find weather data
-       // listen to the event
-    
-      //  this.searchService.createAPIObservable("41042")
-      //  .subscribe((response) => {
-      //    console.log(response);
-      //    this.weather = response;
-      //  });
-      
+
   })
 
 }

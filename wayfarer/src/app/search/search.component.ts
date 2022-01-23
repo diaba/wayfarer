@@ -21,7 +21,7 @@ export class SearchComponent implements OnInit {
     .pipe(debounceTime(1000))// pipe transform a format debounceTime delay 
     .subscribe(zip => {
       console.log(zip);
-    this.searchService.createAPIObservable(zip)
+    this.searchService.createAPIObservable('union')
     .subscribe((response) => {
       console.log(response);
       this.weather = response;
