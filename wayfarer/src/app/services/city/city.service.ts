@@ -19,8 +19,8 @@ export class CityService {
       .flat()
       .filter(
         (post) =>
-          post.title.includes(keyword.toLowerCase()) ||
-          post.content.includes(keyword.toLowerCase())
+          post.title.toLowerCase().includes(keyword.toLowerCase()) ||
+          post.content.toLowerCase().includes(keyword.toLowerCase())
       );
   }
 
