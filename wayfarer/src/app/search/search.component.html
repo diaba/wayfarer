@@ -18,9 +18,9 @@
   <!-- <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
   </form> -->
-<div >
+<div>
   <!-- <br> <input [(ngModel)]="keyword" type="text" class="form-control" placeholder="Search Posts"/> -->
  
-  <input [(ngModel)]="keyword" class="form-control search m-5" type="search" placeholder="Search posts..." aria-label="Search" (change)="search()">  
-  <button (click)="search()">Enter</button>
+  <input [(ngModel)]="keyword" class="form-control search m-5" type="search" placeholder="Search posts..." aria-label="Search" (change)="search()" (keyup.enter)="search()">  
+  <!-- <button (click)="search()">Enter</button> -->
 </div>
