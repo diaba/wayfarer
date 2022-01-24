@@ -9,18 +9,8 @@
    scale: 1.3em;;
 }
 .search{
-    position: relative !important;
-     margin-right: 60px !important;
-    width: 200px !important;
-    bottom:20px;
-}
-nav{
-   height: 100px;
-}
-.header{
-    
-}
-.header nav form{
-    margin-right:10% ;
-    height: 75px;
+    /* position: relative !important;
+     margin-right: 60px !important; */
+    /* width: 00px !important; */
+    /* bottom:20px; */
 }

@@ -1,9 +1,19 @@
 .imgCity{
     width:40%;
 }
-.side{
 
+.city{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    gap: 150px;
 }
-.content{
-
+.items{
+    display: block;
+}
+.items h2{
+display: inline-block;
 }
