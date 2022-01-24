@@ -31,7 +31,7 @@ const routes: Routes = [
     ],
   },
   {
-    path: 'search/:searchTerm',
+    path: 'search/:keyword',
     component: SearchResultsComponent,
   },
   {

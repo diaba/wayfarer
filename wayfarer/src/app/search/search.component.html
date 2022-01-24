@@ -1,6 +1,6 @@
-<form class="form-inline">
-    <!-- <br> <input (keyup)="findWeather(zip,unit)" [(ngModel)]="zip" type="text" class="form-control" placeholder="Zip Code Here"/>
-    -->
+<!-- <form class="form-inline">
+    <br> <input (keyup)="findWeather(zip,unit)" [(ngModel)]="zip" type="text" class="form-control" placeholder="Zip Code Here"/>
+   
     <input (keyup)="findWeather(zip,unit)" [(ngModel)]="zip" class="form-control search m-5" type="search" placeholder="Search" aria-label="Search">  
   </form>
   <section *ngIf="weather">
@@ -13,4 +13,14 @@
     <p>There's a high of {{weather.main.temp_max}} degrees and a low of {{weather.main.temp_min}}</p>
     <p>Humidity: {{weather.main.humidity}}</p>
     <p>Feels like: {{weather.main.feels_like}}</p>
-</section>
+</section> -->
+
+  <!-- <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  </form> -->
+<div >
+  <!-- <br> <input [(ngModel)]="keyword" type="text" class="form-control" placeholder="Search Posts"/> -->
+ 
+  <input [(ngModel)]="keyword" class="form-control search m-5" type="search" placeholder="Search posts..." aria-label="Search" (change)="search()">  
+  <button (click)="search()">Enter</button>
+</div>

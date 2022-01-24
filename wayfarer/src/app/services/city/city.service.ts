@@ -10,7 +10,10 @@ export class CityService {
   //   return this.getAll().find(food => food.id == id)!;
   // }
 
-  getAllPostByKeyword(keyword: string): any[] {
+  getAllPostByKeyword(keyword: string | null): any[] {
+    if (!keyword) {
+      return [];
+    }
     return this.getAll()
       .map((city) => city.posts)
       .flat()
