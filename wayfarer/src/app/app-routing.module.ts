@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SearchComponent } from './search/search.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 const routes: Routes = [
   {
@@ -35,6 +37,10 @@ const routes: Routes = [
         component: PageNotFoundComponent,
       },
     ],
+  },
+  {
+    path: 'search/:searchTerm',
+    component: SearchResultsComponent,
   },
 ];
 
