@@ -74,7 +74,6 @@ ng serve
 
 #### Easier than we thought
 - Rendering a single component (excluding the navbar component) to a specific route
-- 
 
 ### Lesson Learned
 - communicate tasks clearly before ending meeting
