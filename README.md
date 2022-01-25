@@ -83,7 +83,7 @@ ng serve
 
 ### Next Steps
 - Refactor all data calls using service
-- Create more components for organization
+- Organize file structure
 - Deploy
 
 ## Acknowledgments
