@@ -55,25 +55,36 @@ ng serve
 ```
 
 ### Approach
-1. Plan git workflow
-1. Discuessed user stories and wireframes
-    - t about the different component needed to accomplish the requirements
-3. Set up the angular app
-4. Research
-5. Code along approach in the beginning
-6. Task was not delegated until Friday
+1. Plan git workflow (forked version)
+1. Discussed user stories and wireframes
+    - planned out different component needed to accomplish the requirements
+    - used git projects to outline the project milestones
+1. Set up the angular app
+1. Researched...
+    - Routing
+    - Weather API
+1. Started out with pair programming then individual tasks
 
 ### Challenges vs. Non-challenges
 #### Challenges
-- 
+- routing: initially a challenge
+- CSS
+- Working with a service
+- Saving fetch data from an API (Possibly an async issue)
 
-#### Non-challenges
+#### Easier than we thought
 - Rendering a single component (excluding the navbar component) to a specific route
+- 
 
 ### Lesson Learned
 - communicate tasks clearly before ending meeting
 - document git workflow
+- Dynamically creating components with *ngFor*  
 
+### Next Steps
+- Refactor all data calls using service
+- Create more components for organization
+- Deploy
 
 ## Acknowledgments
 
@@ -81,4 +92,7 @@ ng serve
 * [David Magbee](https://www.linkedin.com/in/davidmagbee/)
 * [Usman Basir](https://www.linkedin.com/in/usmanbashir/)
 
-## Contact
+## Contributors
+- [Habsatou War](https://github.com/diaba)
+- [Michelle Lucero](https://github.com/MichelleLucero)
+- [Laury Benoit](https://github.com/laurybenoit)
