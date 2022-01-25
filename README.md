@@ -76,8 +76,8 @@ ng serve
 - Rendering a single component (excluding the navbar component) to a specific route
 
 ### Lesson Learned
-- communicate tasks clearly before ending meeting
-- document git workflow
+- Communicate tasks clearly before ending meeting
+- Document git workflow
 - Dynamically creating components with *ngFor*  
 
 ### Next Steps
