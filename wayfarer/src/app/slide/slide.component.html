@@ -1,56 +1,16 @@
 <div class="centerMe">
-  <ngb-carousel *ngIf="images">
-    <ng-template ngbSlide>
+  <ngb-carousel >
+    <ng-template ngbSlide *ngFor="let city of cities; let i = index">
       <div class="picsum-img-wrapper">
-        <a routerLink="/cities/{{ cities[0].id }}">
-          <img [src]="images[0]" alt="Random second slide"  class="img-responsive img">
-       </a>
+        <a routerLink="/cities/{{ city.id }}">
+          <img src= {{city.image}} alt="Random second slide" class="img-responsive img">
+        </a>
       </div>
       <div class="carousel-caption">
-        <h3>{{cities[0].city}}</h3>
-        <p>Current temp:{{ weathers[0].temp.main.temp}} degrees</p>
-        <!-- <p>
-          Currently   {{ weather.weather[0].description }} with temperature: 
-      </p>
-      <p>There's a high of {{weather.main.temp_max}} degrees and a low of {{weather.main.temp_min}}</p>
-      <p>Humidity: {{weather.main.humidity}}</p>
-      <p>Feels like: {{weather.main.feels_like}}</p> -->
+        <h3>{{city.city}}</h3>
+        <p>Current temp: {{ weathers[i].main.temp}} degrees</p>
       </div>
     </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <a routerLink="/cities/{{ cities[1].id }}">
-            <img [src]="images[1]" class="img-responsive img" alt="Random second slide">
-         </a>
-      
-      </div>
-      <div class="carousel-caption">
-        <h3>{{cities[1].city}}</h3>
-        <p>Current temp:{{ weathers[1].temp.main.temp}} degrees</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <a routerLink="/cities/{{ cities[2].id }}">
-          <img [src]="images[2]" class="img-responsive img" alt="Random second slide">
-       </a>
-      </div>
-      <div class="carousel-caption">
-        <h3>{{cities[2].city}}</h3>
-        <p>Current temp:{{ weathers[2].temp.main.temp}} degrees</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <a routerLink="/cities/{{ cities[3].id }}">
-          <img [src]="images[3]" class="img-responsive img" alt="Random second slide">
-       </a>
-      </div>
-      <div class="carousel-caption">
-        <h3>{{cities[3].city}}</h3>
-        <p>Current temp:{{ weathers[3].temp.main.temp}} degrees</p>
-      </div>
-    </ng-template>
-</ngb-carousel>
+  </ngb-carousel>
 
 </div>
