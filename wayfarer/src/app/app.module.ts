@@ -8,7 +8,6 @@ import { CityComponent } from './city/city.component';
 import { PostComponent } from './post/post.component';
 import { PostDetailsComponent } from './post-details/post-details.component';
 
-
 import { SearchComponent } from './search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -19,7 +18,6 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TopicsComponent } from './topics/topics.component';
 import { FormsModule } from '@angular/forms';
-
 
 @NgModule({
   declarations: [
@@ -43,6 +41,6 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
