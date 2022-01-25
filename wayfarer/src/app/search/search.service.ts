@@ -7,12 +7,9 @@ import { HttpClient } from '@angular/common/http';
 export class SearchService {
 
   constructor(private http: HttpClient) { }
-  createAPIObservable(zip:any){
-    return      this.http.get(`http://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=052f26926ae9784c2d677ca7bc5dec98&&units=imperial`)
-  
+
+  createAPIObservable(city:string, code:string){
+    return      this.http.get(`http://api.openweathermap.org/data/2.5/weather?q=${city},${code}&APPID=e0449c7136f994da0fd5775049e4825c`)
+
   }
-  // createAPIObservable(city:any){
-  //   return      this.http.get(`http://api.openweathermap.org/data/2.5/weather?zip=${city},us&appid=052f26926ae9784c2d677ca7bc5dec98&&units=imperial`)
-  //   // api.openweathermap.org/data/2.5/weather?q=${zip}&appid=052f26926ae9784c2d677ca7bc5dec98
-  // }
 }

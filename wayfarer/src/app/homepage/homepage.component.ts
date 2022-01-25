@@ -9,23 +9,11 @@ import { debounceTime, Subject } from 'rxjs'; // observable
 
 })
 export class HomepageComponent implements OnInit {
-  weather: any;
-  searchSubject = new Subject();
-  constructor(private searchService: SearchService) { }
+ 
+  constructor() { }
 
   ngOnInit(): void {  // listen to the event
-      this.searchSubject
-      .pipe(debounceTime(1000))// pipe transform a format debounceTime delay 
-      .subscribe(zip => {
-        console.log(zip);
-      this.searchService.createAPIObservable(zip)
-      .subscribe((response) => {
-        console.log(response);
-        this.weather = response;
-      });
-      })
+ 
   }
-findWeather(zip: string, unit:string): void {
-  this.searchSubject.next(zip); // track zip change
-}
+
 }
