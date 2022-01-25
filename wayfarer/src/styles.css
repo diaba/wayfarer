@@ -3,15 +3,16 @@
 
 * {
     font-family: 'Roboto', Arial, sans-serif;
-    /* color: white; */
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #fff;
   }
   
   body {
     margin: 0;
-    background-color: #92a332;
+    /* background-color: #e6e9f0; */
+    background: #111;
   }
 
   router-outlet + *  {
@@ -70,54 +71,29 @@ label {
   text-transform: uppercase;
 }
 
-/* Button */
-.button, button {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 16px;
-  border-radius: 2px;
-  font-size: 14px;
-  cursor: pointer;
-  /* background-color: #1976d2; */
-  color: white;
-  border: none;
-}
-/* 
-.navImg{
-  width: 40%;
-} */
-
 .side{
   grid-area: s;
   display:flex;
   flex-direction: column;
-  background-color: #849531;
- 
+  /* background-color: #c2dde6; */
+  height: 100vh;
+ width: 20vw;
+ max-width: 250px;
 }
-.sideElt{
-padding: 10px;
-/* flex: 50%;  */
-
-}
-.main{
-  grid-area: m;
-
-}  
+  
 /* //brand title */
 .title{
   margin-left:30%;
-  
   font-size: 2.1em;
-  /* margin-bottom:20px;
-  padding: 15px; */
 }
-nav{
-  background-color: #56642a;
-}
-nav a{
+ a{
   color: white
 }
  a:hover{
-  color: white;
+  color: #431c5d;
   font-weight: bold
+}
+.sr-only{
+  display:none;
+
 }

@@ -1,6 +1,7 @@
 <div class="centerMe">
-  <ngb-carousel >
+  <ngb-carousel > 
     <ng-template ngbSlide *ngFor="let city of cities; let i = index">
+      <p class="text-center">Click the slide image for more details.</p>
       <div class="picsum-img-wrapper">
         <a routerLink="/cities/{{ city.id }}">
           <img src= {{city.image}} alt="Random second slide" class="img-responsive img">
@@ -8,9 +9,13 @@
       </div>
       <div class="carousel-caption">
         <h3>{{city.city}}</h3>
-        <p>Current temp: {{ weathers[i].main.temp}} degrees</p>
+        <p>{{ weathers[i].main.temp}} &deg;C</p>
+        <img src="http://openweathermap.org/img/wn/{{weathers[i].weather[0].icon}}@2x.png" alt="" srcset="">
+ 
       </div>
+     
     </ng-template>
   </ngb-carousel>
+  
 
 </div>

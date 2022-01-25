@@ -12,7 +12,6 @@ import { debounceTime, Subject } from 'rxjs'; // observable
 })
 export class SlideComponent implements OnInit {
   cities = CITIES;
-  // images = this.cities.map((n) => n.image);
   weathers: any[] = [];
   searchSubject = new Subject();
   constructor(private searchService: SearchService, config: NgbCarouselConfig) {
@@ -31,13 +30,10 @@ export class SlideComponent implements OnInit {
       this.searchService
         .createAPIObservable(city.city, city.code)
         .subscribe((response) => {
-          //   console.log(response);
           this.weathers.push(response);
         });
     });
 
     console.log(this.weathers);
-    // this.weathers = this.cities;
-    // console.log(this.cities);
   }
 }
