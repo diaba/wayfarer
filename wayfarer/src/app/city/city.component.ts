@@ -28,14 +28,6 @@ export class CityComponent implements OnInit {
           return j.id === parseInt(paramId)
         });
         console.log("City Details: city"+this.city.id);
-  // find weather data
-       // listen to the event
-    
-      //  this.searchService.createAPIObservable("41042")
-      //  .subscribe((response) => {
-      //    console.log(response);
-      //    this.weather = response;
-      //  });
       
   })
 

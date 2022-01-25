@@ -6,10 +6,6 @@ import { Injectable } from '@angular/core';
 export class CityService {
   constructor() {}
 
-  // getFoodById(id: number): Food{
-  //   return this.getAll().find(food => food.id == id)!;
-  // }
-
   getAllPostByKeyword(keyword: string | null): any[] {
     if (!keyword) {
       return [];
@@ -23,7 +19,6 @@ export class CityService {
           post.content.toLowerCase().includes(keyword.toLowerCase())
       );
   }
-
   getAll(): any[] {
     return [
       {

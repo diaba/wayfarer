@@ -1,18 +1,12 @@
 .cityname,
 .img-small{
     display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    /* width: 30%; */
-    /* margin-left: 1em; */
 }
 .img-small{
     width: 30%;
 }
 .citybox{
+    margin-left: 10%;
     padding: 0 20px;
     width: 90%;
     display: inline-flex;
@@ -24,4 +18,11 @@
     border: solid 1px black;
    border-radius: 20px;
    height: 10vh;
+   background: hsla(276, 22%, 41%, 0.331);
+}
+.citybox:hover{
+    background:#431c5d;
+}
+.header{
+    margin-left: 15%;
 }
