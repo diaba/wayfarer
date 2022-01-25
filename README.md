@@ -55,11 +55,13 @@ ng serve
 ```
 
 ### Approach
-1. Set up the angular app
-2. went over the user stories, talk about the different component needed to accomplish the requirements
-3. Research
-4. Code along approach in the beginning
-5. Task was not delegated until Friday
+1. Plan git workflow
+1. Discuessed user stories and wireframes
+    - t about the different component needed to accomplish the requirements
+3. Set up the angular app
+4. Research
+5. Code along approach in the beginning
+6. Task was not delegated until Friday
 
 ### Challenges vs. Non-challenges
 #### Challenges
