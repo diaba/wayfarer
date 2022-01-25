@@ -4,6 +4,7 @@ import { CITIES } from '../city/cities';
 import {SearchService } from './../search/search.service'
 import { debounceTime, Subject } from 'rxjs'; // observable
 
+
 @Component({
   selector: 'app-slide',
   templateUrl: './slide.component.html',
@@ -13,7 +14,7 @@ import { debounceTime, Subject } from 'rxjs'; // observable
 export class SlideComponent implements OnInit {
   cities = CITIES;
   images = this.cities.map((n) => n.image);
-  weather: any;
+  weathers: any[] = [];
   searchSubject = new Subject();
   constructor(private searchService: SearchService,config: NgbCarouselConfig) { 
     // customize default values of carousels used by this component tree
@@ -27,24 +28,49 @@ export class SlideComponent implements OnInit {
 
 
   ngOnInit(): void {  // listen to the event
-    console.log("---Slide ==> onInit----");
+  
+    //   console.log("---Slide ==> onInit----");
+  //   // list of cities
+  //   console.log("---Slide ==> cities----"+this.cities);
+  //   // list of weather
 
-    this.searchSubject
-   // .pipe(debounceTime(1000))// pipe transform a format debounceTime delay 
-    .subscribe(zip => {
-      console.log("Slide ==> zip info :"+ zip);
-    this.searchService.createAPIObservable('41042')
-    .subscribe((response) => {
-      console.log("Slide ==> weather object info :"+ response);
-      this.weather = response;
-    });
+  //   this.searchSubject
+  //    .pipe(debounceTime(1000))// pipe transform a format debounceTime delay 
+  //   .subscribe(res => {
+  //     console.log("......."+res);
+  //  this.searchService.createAPIObservable('london','uk')
+  //   .subscribe((response) => {
+  //     console.log(response);
+  //     //this.weather = response;
+  //   });
+  //   })
+
+     this.cities.forEach((city) =>{
+      console.log(city.city + " " + city.country);
+      this.searchService.createAPIObservable(city.city, city.code)
+      .subscribe((response) => {
+      //   console.log(response);
+       city.temp = response
+        // this.weathers.push(response);
+        // console.log(this.weathers);
+      })
     })
-}
-findWeather(zip: string, unit:string): void {
-this.searchSubject.next(zip); // track zip change
-}
+ 
+   
+  // console.log(this.cities);
+  this.weathers = this.cities;
+  console.log(this.weathers);
+  
+  
+   
+    
+  }
+
+
 
 }
+
+
 
 
 

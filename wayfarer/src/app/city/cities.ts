@@ -2,6 +2,9 @@ export const CITIES = [
   {
     id: 1,
     city: 'London',
+    country: 'United Kingdom',
+    code:'Uk',
+    temp:{},
     image: 'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=40%',
     posts: [
       {
@@ -17,6 +20,9 @@ export const CITIES = [
   {
     id: 2,
     city: 'Sydney',
+    country: 'Australia',
+    code:'AU',
+    temp:{},
     image:
       'https://images.pexels.com/photos/995765/pexels-photo-995765.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=60%',
     posts: [
@@ -33,6 +39,9 @@ export const CITIES = [
   {
     id: 3,
     city: 'San Francisco',
+    country: 'United States',
+    code:'US',
+    temp:{},
     image:
       'https://images.pexels.com/photos/208745/pexels-photo-208745.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=60%',
     posts: [
@@ -49,6 +58,9 @@ export const CITIES = [
   {
     id: 4,
     city: 'Seattle',
+    country: 'United States',
+    code:'US',
+    temp:{},
     image:
       'https://images.pexels.com/photos/336512/pexels-photo-336512.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=60%',
     posts: [
