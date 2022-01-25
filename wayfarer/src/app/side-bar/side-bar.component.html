@@ -1,0 +1,9 @@
+<h1 class="header">Cities</h1>
+<div *ngFor="let city of cities" class=" citybox" routerLink="/cities/{{ city.id }}/posts">
+    <div class="img-small">
+            <img class="img-responsive img-thumbnail navImg" src="{{city.image}}" alt="" srcset="">
+        </div>
+        <div class="cityname">
+            {{ city.city}}
+        </div>
+</div>

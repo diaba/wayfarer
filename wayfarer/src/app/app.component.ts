@@ -2,6 +2,7 @@ import { CITIES } from './city/cities';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,9 +10,4 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'wayfarer';
-  cities = CITIES;
-
-  constructor(private route: ActivatedRoute) {}
-
-  ngOnInit(): void {}
 }

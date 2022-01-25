@@ -1,34 +1,4 @@
-<!-- <div class="container">
-    <div class="slides">
-
-    </div>
-    <div class="description-boxes">
-        name
-    </div>
-</div> -->
-<div class="content">
-
+<app-navbar></app-navbar>
+<div class="container-fluid">
+   <router-outlet></router-outlet>
 </div>
-
-<div class="container">
-    <div class="nav">
-        <app-navbar></app-navbar>
-    </div>
-    <div class="side">
-        <div *ngFor="let city of cities" class="sideElt">
-            <a routerLink="/cities/{{ city.id }}">
-                {{ city.city}} 
-                <img class="img-responsive img-thumbnail navImg" src="{{city.image}}" alt="" srcset="">
-            </a>
-            
-        </div>
-    </div>
-    <div class="main">
-        <router-outlet></router-outlet>
-    </div>
-</div>
-
-
-
-<router-outlet></router-outlet>
-
